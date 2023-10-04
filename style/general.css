@@ -51,21 +51,6 @@ body {
   color: #333;
 }
 
-header {
-  height: 100vh;
-  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
-    url(./img/backup.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  position: relative;
-  color: #fff;
-
-  /* ANIMASI */
-  overflow-x: hidden;
-}
-
 .container {
   max-width: 130rem;
   margin: 0 auto;
