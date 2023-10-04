@@ -54,7 +54,7 @@ body {
 header {
   height: 100vh;
   background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
-    url(/07-Geromichi-Desktop/img/backup.png);
+    url(/img/hero-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
