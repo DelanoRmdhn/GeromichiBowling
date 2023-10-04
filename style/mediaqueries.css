@@ -1,0 +1,282 @@
+/* rem dan em di media queries tidak bergantung pada font-size yang telah kita ubah ke 10px. jadi rem dan em saat ini nilainya massih 16px  */
+
+/* UKURAN PADA LAYAR DESKTOP KECIL (1344px) */
+
+@media (max-width: 84em) {
+  .hero-section {
+    top: 55%;
+    right: 10%;
+
+    transform: translate(10%, -55%);
+  }
+
+  .hero-box {
+    max-width: 50rem;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 70em) {
+  .hero-section {
+    top: 55%;
+    right: 50%;
+
+    transform: translate(50%, -55%);
+  }
+
+  .hero-box {
+    width: 50rem;
+  }
+
+  html {
+    font-size: 56%;
+  }
+
+  .about-us-img {
+    width: 100%;
+    border-radius: 1.9rem;
+  }
+
+  .events-number {
+    font-size: 6.4rem;
+  }
+
+  .events-title {
+    margin-bottom: 2.4rem;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .service-icon {
+    font-size: 2.8rem;
+    padding: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 2rem;
+  }
+
+  .event-section-subtitle {
+    font-size: 2rem;
+  }
+  .event-section-title {
+    font-size: 3.6rem;
+  }
+
+  .previous-event {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 12.8rem;
+  }
+
+  .events-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .events-title {
+    font-size: 3rem;
+  }
+
+  .events-description {
+    font-size: 2rem;
+    line-height: 2.1;
+  }
+
+  .events-image img {
+    width: 80%;
+  }
+
+  .first-col {
+    grid-row: 1/2;
+  }
+
+  .second-col {
+    grid-row: 5/6;
+  }
+
+  .upcoming-event-heading {
+    text-align: center;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #d62828;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    /* ANIMASI */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s;
+
+    /* MENYEMBUNYIKAN NAVIGASI */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* MENYEMBUNYIKAN DAN MENAMPILKAN ICON*/
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* MENAMPILKAN MAIN NAV SAAT NAV OPEN ADA */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* MENYEMBUNYIKAN HERO-SECTION SAAT NAV OPEN ADA */
+  .nav-open .hero-section {
+    display: none;
+  }
+}
+
+@media (max-width: 58em) {
+  .about-us-title {
+    font-size: 2.8rem;
+  }
+
+  .social-media-img {
+    width: 2.8rem;
+    display: block;
+  }
+
+  .about-us-description {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 45em) {
+  .container2 {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .featured-heading {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .logos img {
+    height: 3rem;
+  }
+
+  .about-us-section {
+    padding-bottom: 9.6rem;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-img {
+    width: 60%;
+  }
+
+  .events-text .events-title {
+    font-size: 2.8rem;
+  }
+
+  .events-description {
+    font-size: 1.8rem;
+  }
+
+  .upcoming-event {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 12.8rem;
+  }
+}
+
+@media (max-width: 31em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-box {
+    width: 40rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+  }
+
+  .hero-btn .btn:link,
+  .hero-btn .btn:visited {
+    padding: 1rem 2rem;
+  }
+
+  .events-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 22em) {
+  html {
+    font-size: 35%;
+  }
+}
+/* 
+-- 01 FONT-SIZING (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  
+
+--06 SPACING-SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 140 
+*/

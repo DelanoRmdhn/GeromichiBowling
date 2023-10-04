@@ -1,0 +1,160 @@
+/* TIPOGRAFI SETTING */
+
+/* 
+
+-- 01 FONT-SIZING (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- 02 COLOR
+main color : 
+#d62828 #f77f00 #333333
+
+tints : 
+#f99933 #F9A54D
+
+shades : 
+#de7200
+
+
+-- 03 SHADOWS
+
+--04 BORDER-RADIUS
+box : 1.2rem
+btn : 3rem 4rem
+
+--05 WHITESPACE
+
+
+--06 SPACING-SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 140
+
+*/
+
+/**********************/
+/* GENERAL COMPONENTS */
+/**********************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
+    url(/07-Geromichi-Desktop/img/backup.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  color: #fff;
+
+  /* ANIMASI */
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container2 {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  padding: 9.6rem 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 12.8rem;
+}
+
+.grid--center-v {
+  align-self: center;
+}
+
+.grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-tertiary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #f9a54d;
+
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  color: #d62828;
+  margin-bottom: 2.4rem;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 4rem;
+
+  transition: all 0.3s;
+}
+
+.btn--filled {
+  background-color: #f77f00;
+  color: #fff;
+}
+
+.btn--transparent {
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.btn--filled:hover,
+.btn--filled:active {
+  background-color: #de7200;
+}
+
+.btn--transparent:hover,
+.btn--transparent:active {
+  color: #000;
+  background-color: #fff;
+}
