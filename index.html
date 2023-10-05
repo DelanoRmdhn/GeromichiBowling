@@ -38,16 +38,20 @@
     }
   </style>
   <body>
-    <header>
+    <header id="header">
       <div class="navigation-bar container">
         <div class="logo-img">LOGO</div>
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a href="#" class="main-nav-link">Partner kami</a></li>
-            <li><a href="#" class="main-nav-link">Tentang kami</a></li>
-            <li><a href="#" class="main-nav-link">Event terakhir</a></li>
+            <li><a href="#partner" class="main-nav-link">Partner kami</a></li>
+            <li><a href="#about" class="main-nav-link">Tentang kami</a></li>
             <li>
-              <a href="#" class="main-nav-link nav-register">Event terbaru</a>
+              <a href="#last-event" class="main-nav-link">Event terakhir</a>
+            </li>
+            <li>
+              <a href="#next-event" class="main-nav-link nav-register"
+                >Event terbaru</a
+              >
             </li>
           </ul>
         </nav>
@@ -69,8 +73,10 @@
                 dengan bowling.
               </p>
               <div class="hero-btn">
-                <a href="#" class="btn btn--filled">Mendaftar lomba!</a>
-                <a href="#" class="btn btn--transparent"
+                <a href="#next-event" class="btn btn--filled"
+                  >Mendaftar lomba!</a
+                >
+                <a href="#about" class="btn btn--transparent"
                   >Pelajari selengkapnya &darr;</a
                 >
               </div>
@@ -81,7 +87,7 @@
     </header>
 
     <section class="featured-in-section">
-      <div class="featured-in container2">
+      <div class="featured-in container2" id="partner">
         <h2 class="featured-heading">Bekerja sama dengan</h2>
         <div class="logos">
           <img src="img/Sponsor/BusinessInsider-logo.png" />
@@ -93,7 +99,7 @@
       </div>
     </section>
 
-    <section class="about-us-section container2">
+    <section class="about-us-section container2" id="about">
       <div class="about-us grid grid--cols-2">
         <div class="about-us-image">
           <img src="img/about-us.png" class="about-us-img" />
@@ -168,7 +174,7 @@
     </section>
 
     <div class="background-color">
-      <section class="event-section container2">
+      <section class="event-section container2" id="last-event">
         <div class="event-heading">
           <p class="section-tertiary event-section-subtitle">
             Event Bowling Terakhir
@@ -220,14 +226,15 @@
           <div class="events-text">
             <h2 class="events-number">03</h2>
             <h1 class="events-title">
-              Nazwa Hana(RAWR) Mendominasi dalam Event GeroMichi Bowling
-              Championship 2023
+              Maharani Mendominasi dalam Event GeroMichi Bowling Championship
+              2023
             </h1>
             <p class="events-description">
-              Nazwa(RAWR Bowling Academy) Berhasil menumbangkan seluruh peserta
-              dengan lemparannya yang fenomenal. Dia berhasil mengalahkan
-              lawan-lawannya hanya dengan 3 ronde saja. Dengan ini Nazwa(RAWR
-              Bowling Academy) berhasil menyabet juara 1 Kategori Perempuan.
+              Maharani (Patriots Bowling Academy) Berhasil menumbangkan seluruh
+              peserta dengan lemparannya yang fenomenal. Dia berhasil
+              mengalahkan lawan-lawannya hanya dengan 3 ronde saja. Dengan
+              iniMaharani (Patriots Bowling Academy) berhasil menyabet juara 1
+              Kategori Perempuan.
             </p>
           </div>
           <div class="events-image second-col">
@@ -237,7 +244,7 @@
       </section>
     </div>
 
-    <section class="upcoming-event-section container2">
+    <section class="upcoming-event-section container2" id="next-event">
       <div class="upcoming-event-heading">
         <h2 class="section-tertiary">event mendatang</h2>
         <h1 class="section-title">Ayo Segera Daftarkan Diri Anda!</h1>
@@ -311,5 +318,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   </body>
 </html>
