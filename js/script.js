@@ -1,7 +1,8 @@
+console.log("hello");
 // MOBILE NAVIGATION
-const btnNav = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector("header");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const navbar = document.querySelector(".navigation-bar");
 
-btnNav.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
+btnNavEl.addEventListener("click", function () {
+  navbar.classList.toggle("nav-open");
 });
