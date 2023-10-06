@@ -1,4 +1,3 @@
-console.log("hello");
 // MOBILE NAVIGATION
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navbar = document.querySelector(".navigation-bar");
@@ -34,3 +33,5 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+//
